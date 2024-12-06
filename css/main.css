@@ -1,0 +1,82 @@
+body {
+    font-family:  sans-serif;
+    background-color: #f7ecde ;
+    box-sizing: border-box;
+  }
+
+body{
+  box-sizing: border-box;
+}
+main h1::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+}
+
+.designs{
+  border-color: black;
+  border-width: 2px 0 2px 0;
+  border-style: dotted;
+}
+.fa-bookmaker::before{
+  content: "\f02e";
+}
+
+
+.btn-delete {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #eb1d36;
+  --bs-btn-border-color: #eb1d36;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d30820;
+  --bs-btn-hover-border-color: #ba081d;
+} 
+
+
+
+.btn-visit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #9eb23b;
+  --bs-btn-border-color: #9eb23b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8a9e23;
+  --bs-btn-hover-border-color: #6e8018;
+}
+
+table {
+  vertical-align: middle ;
+}
+
+
+.box-conent {
+  width: 500px;
+  z-index: 10;
+}
+
+.box-conent p {
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  color: #352e28;
+}
+
+.rules li {
+  font-size: 20px;
+  padding-top: 15px;
+}
+.rules i {
+  color: #bb4120;
+}
+
+
+
+
+.logo {
+  width: 40px;
+} 

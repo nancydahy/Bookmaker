@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    
+    <title> Bookmarker </title>
+</head>
+
+<body>
+  <main class="hello py-5 position-relative" style="min-height: 100vh; background-color: #f7ecde;">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <h1 class="book position-relative py-3" style="font-size: 50px;
+        font-family:  cursive;
+        color: #352e28;
+        isolation: isolate; font-style: italic;"><b>Bookmaker</b></h1>
+       
+       <div class="designs p-4 py-4 d-flex flex-column justify-content-center align-items-center w-100 mt-4">
+         <h2 class="site" style="color:  #3ca55c; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <i class="fa-regular fa-bookmark" style="color: #b5ac49;  "></i>
+           <b>Bookmark your favorite sites</b>
+           <i class="fa-regular fa-bookmark" style="color: #b5ac49;"></i>
+         </h2>
+    
+         <div class="site w-100 d-flex flex-column justify-content-center">
+            <label for="bookmarkName" class="pb-3" style="font-weight: 600;">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <b>Site Name</b>
+            </label>
+            <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+        
+        </div>
+
+        <div class="site2 w-100 d-flex flex-column justify-content-center pt-4">
+            <label for="bookmarkURL" class="pb-3" style="font-weight: 600;">
+                <i class="fa-solid fa-link"></i>
+                <b>Site URL</b>
+            </label>
+            <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL">
+        
+        </div>
+            <button class="btn btn-danger px-5 my-4" id="submitBtn">Submit</button>
+          </div>
+          <table class="table mt-4 text-center bg-light">
+            <thead>
+              <tr><th class="text-capitalize">index</th>
+              <th class="text-capitalize">Website Name</th>
+              <th class="text-capitalize">Visit</th>
+              <th class="text-capitalize">Delete</th>
+            </tr></thead>
+            <tbody id="tableContent"></tbody>
+          </table>
+        </div>
+        <div class="box-info position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center d-none" style="background-color:#0007 ;">
+          <div class="box-conent bg-white p-4 rounded-2 shadow-lg">
+            <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+              <div class="circles d-flex">
+                <span class="rounded-circle me-2" style="background-color: red; display: block;
+                width: 20px;
+                height: 20px;"></span>
+                <span class="rounded-circle me-2" style="background-color: green; display: block;
+                width: 20px;
+                height: 20px; "></span>
+                <span class="rounded-circle me-2" style="background-color: yellow; display: block;
+                width: 20px;
+                height: 20px;   "></span>
+              </div>
+              <button class="btn border-0" id="closeBtn">
+                <i class="fa-solid fa-xmark close fs-3"></i>
+              </button>
+            </header>
+            <p class="m-0 pb-2">
+              Site Name or Url is not valid, Please follow the rules below :
+            </p>
+            <ol class="rules list-unstyled m-0">
+              <li>
+                <i class="fa-regular fa-circle-right p-2"></i>Site name must
+                contain at least 3 characters
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+                valid one
+              </li>
+            </ol>
+          </div>
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+
+</html>
